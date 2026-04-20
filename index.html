@@ -26,6 +26,9 @@
   </div>
 
   <script>
+    window.onerror = function(msg, url, line) {
+      alert("エラー発生: " + msg + "\n行: " + line);
+    };
     const input = document.getElementById('user-input');
     const micBtn = document.getElementById('mic-btn');
     const sendBtn = document.getElementById('send-btn');
